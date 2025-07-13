@@ -23,7 +23,7 @@
         half_circle_forwadD: half_circle_forwadD {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A &kp D &kp D>;
+            bindings = <&kp S &kp D &kp D>;
             label = "HALF_CIRCLE_FORWADD";
         };
 
@@ -39,6 +39,34 @@
             #binding-cells = <0>;
             bindings = <&kp COLON &kp W>;
             label = "WRITE_VIM";
+        };
+
+        half_circle_back: half_circle_back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp A &kp A>;
+            label = "HALF_CIRCLE_BACK";
+        };
+
+        downdown: downdown {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp N0 &kp S>;
+            label = "DOWNDOWN";
+        };
+
+        f_down_forward: f_down_forward {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp S &kp D &kp D>;
+            label = "F_DOWN_FORWARD";
+        };
+
+        back_down_back: back_down_back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp S &kp A &kp A>;
+            label = "BACK_DOWN_BACK";
         };
     };
 
@@ -72,11 +100,11 @@
         SF6 {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2                &kp N3    &kp N4     &kp N5  &tog 2                                                              &to 2      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W                 &kp E     &kp R      &kp T   &to 0                                                               &to 3      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S                 &kp D     &kp F      &kp G   &to 1   &kp LEFT_CONTROL  &kp LALT      &kp LGUI   &lt 5 RIGHT_ALT  &to 4      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &half_circle_forwadD  &kp C     &kp V      &kp B                             &kp HOME      &kp PG_UP                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 5      &kp GRAVE  &kp CAPS              &kp LEFT  &kp RIGHT          &kp N0  &kp DEL           &kp END       &kp PG_DN  &kp ENTER        &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 5
+&kp EQUAL  &kp N1             &kp N2                &kp N3           &kp N4           &kp N5     &tog 2                                                              &to 2      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q              &kp W                 &kp E            &kp R            &kp T      &to 0                                                               &to 3      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A              &kp S                 &kp D            &kp F            &kp G      &to 1   &kp LEFT_CONTROL  &kp LALT      &kp LGUI   &lt 5 RIGHT_ALT  &to 4      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &half_circle_back  &half_circle_forwadD  &f_down_forward  &back_down_back  &downdown                            &kp HOME      &kp PG_UP                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 5      &kp GRAVE          &kp CAPS              &kp LEFT         &kp RIGHT                   &kp N0  &kp DEL           &kp END       &kp PG_DN  &kp ENTER        &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 5
             >;
         };
 
