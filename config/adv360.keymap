@@ -13,9 +13,9 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             flavor = "tap-preferred";
-            quick-tap-ms = <200>;
+            quick-tap-ms = <300>;
         };
     };
 
@@ -48,11 +48,11 @@
         Colemak-DHM {
             display-name = "normal";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &to 2                                                    &mo 2              &kp N6  &kp N7  &kp N8     &kp N9      &kp N0         &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &to 0                                                    &to 3              &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &kp BSLH
-&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &to 1     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 4              &kp M   &kp N   &kp E      &kp I       &kp O          &kp SQT
-&kp LSHFT  &kp X      &kp C     &kp D     &kp V      &kp Z                        &kp HOME      &kp PG_UP                                &kp K   &kp H   &kp COMMA  &kp PERIOD  &kp SLASH      &kp RSHFT
-&mo 5      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &nvim_lux 5 SPACE          &kp UP  &kp DOWN   &kp KP_DOT  &kp RBKT       &mo 5
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &to 2                                                                 &mo 2      &kp N6  &kp N7  &kp N8     &kp N9      &kp N0         &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &to 0                                                                 &to 3      &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &kp BSLH
+&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &to 1                  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 4      &kp M   &kp N   &kp E      &kp I       &kp O          &kp SQT
+&kp LSHFT  &kp X      &kp C     &kp D     &kp V      &kp Z                                     &kp HOME      &kp PG_UP                        &kp K   &kp H   &kp COMMA  &kp PERIOD  &kp SLASH      &kp RSHFT
+&mo 5      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &nvim_lux 5 BACKSPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp KP_DOT  &kp RBKT       &mo 5
             >;
 
             label = "normal";
@@ -61,11 +61,11 @@
         low-key-QWERTY {
             display-name = "normal";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 2                                                                &to 2              &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &to 0                                                                 &to 3              &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &to 1     &kp LEFT_CONTROL  &kp LALT      &kp LGUI   &lt 5 RIGHT_ALT  &to 4              &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                               &kp HOME      &kp PG_UP                                      &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 5      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL           &kp END       &kp PG_DN  &kp ENTER        &nvim_lux 5 SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 5
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 2                                                                             &to 2      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &to 0                                                                              &to 3      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &to 1                  &kp LEFT_CONTROL  &kp LALT      &kp LGUI   &lt 5 RIGHT_ALT  &to 4      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                            &kp HOME      &kp PG_UP                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 5      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &nvim_lux 5 BACKSPACE  &kp DEL           &kp END       &kp PG_DN  &kp ENTER        &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 5
             >;
         };
 
@@ -83,22 +83,22 @@
         Colemak-DHM-mac {
             display-name = "mac";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &to 2                                                    &to 2              &kp N6  &kp N7  &kp N8     &kp N9      &kp N0         &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &to 0                                                    &to 3              &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &kp BSLH
-&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &to 1     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 4              &kp M   &kp N   &kp E      &kp I       &kp O          &kp SQT
-&kp LSHFT  &kp X      &kp C     &kp D     &kp V      &kp Z                        &kp HOME      &kp PG_UP                                &kp K   &kp H   &kp COMMA  &kp PERIOD  &kp SLASH      &kp RSHFT
-&mo 5      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &nvim_lux 5 SPACE          &kp UP  &kp DOWN   &kp KP_DOT  &kp RBKT       &mo 5
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &to 2                                                                 &to 2      &kp N6  &kp N7  &kp N8     &kp N9      &kp N0         &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &to 0                                                                 &to 3      &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &kp BSLH
+&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &to 1                  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 4      &kp M   &kp N   &kp E      &kp I       &kp O          &kp SQT
+&kp LSHFT  &kp X      &kp C     &kp D     &kp V      &kp Z                                     &kp HOME      &kp PG_UP                        &kp K   &kp H   &kp COMMA  &kp PERIOD  &kp SLASH      &kp RSHFT
+&mo 5      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &nvim_lux 5 BACKSPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp KP_DOT  &kp RBKT       &mo 5
             >;
         };
 
         low-key-QWERTY-mac {
             display-name = "mac";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 2                                                                &to 2              &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &to 0                                                                 &to 3              &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &to 1     &kp LEFT_CONTROL  &kp LALT      &kp LGUI   &lt 5 RIGHT_ALT  &to 4              &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                               &kp HOME      &kp PG_UP                                      &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 5      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL           &kp END       &kp PG_DN  &kp ENTER        &nvim_lux 5 SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 5
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 2                                                                             &to 2      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &to 0                                                                              &to 3      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &to 1                  &kp LEFT_CONTROL  &kp LALT      &kp LGUI   &lt 5 RIGHT_ALT  &to 4      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                            &kp HOME      &kp PG_UP                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 5      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &nvim_lux 5 BACKSPACE  &kp DEL           &kp END       &kp PG_DN  &kp ENTER        &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 5
             >;
         };
 
