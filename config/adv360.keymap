@@ -14,9 +14,9 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             flavor = "tap-preferred";
-            quick-tap-ms = <300>;
+            quick-tap-ms = <250>;
         };
     };
 
@@ -77,11 +77,11 @@
         Colemak-DHM {
             display-name = "normal";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &to 2                                                                 &none      &kp N6  &kp N7  &kp N8     &kp N9      &kp N0         &kp MINUS
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &to 2                                                                 &mo 7      &kp N6  &kp N7  &kp N8     &kp N9      &kp N0         &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &to 0                                                                 &to 3      &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &kp BSLH
 &kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &to 1                  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 4      &kp M   &kp N   &kp E      &kp I       &kp O          &kp SQT
 &kp LSHFT  &kp X      &kp C     &kp D     &kp V      &kp Z                                     &kp HOME      &kp PG_UP                        &kp K   &kp H   &kp COMMA  &kp PERIOD  &kp SLASH      &kp RSHFT
-&mo 5      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &nvim_lux 5 BACKSPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp KP_DOT  &kp RBKT       &mo 5
+&mo 8      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &nvim_lux 5 BACKSPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp KP_DOT  &kp RBKT       &mo 8
             >;
 
             label = "normal";
@@ -90,11 +90,11 @@
         low-key-QWERTY {
             display-name = "normal";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 2                                                                             &to 2      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 2                                                                             &mo 7      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &to 0                                                                              &to 3      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &to 1                  &kp LEFT_CONTROL  &kp LALT      &kp LGUI   &lt 5 RIGHT_ALT  &to 4      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                            &kp HOME      &kp PG_UP                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 5      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &nvim_lux 5 BACKSPACE  &kp DEL           &kp END       &kp PG_DN  &kp ENTER        &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 5
+&mo 8      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &nvim_lux 5 BACKSPACE  &kp DEL           &kp END       &kp PG_DN  &kp ENTER        &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 8
             >;
         };
 
@@ -105,40 +105,40 @@
 &kp TAB    &kp Q              &kp W                 &kp E            &kp R            &kp T      &to 0                                                               &to 3      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
 &kp ESC    &kp A              &kp S                 &kp D            &kp F            &kp G      &to 1   &kp LEFT_CONTROL  &kp LALT      &kp LGUI   &lt 5 RIGHT_ALT  &to 4      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &half_circle_back  &half_circle_forwadD  &f_down_forward  &back_down_back  &downdown                            &kp HOME      &kp PG_UP                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 5      &kp GRAVE          &kp CAPS              &kp LEFT         &kp RIGHT                   &kp N0  &kp DEL           &kp END       &kp PG_DN  &kp ENTER        &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 5
+&mo 8      &kp GRAVE          &kp CAPS              &kp LEFT         &kp RIGHT                   &kp N0  &kp DEL           &kp END       &kp PG_DN  &kp ENTER        &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 8
             >;
         };
 
         Colemak-DHM-mac {
             display-name = "mac";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &to 2                                                                 &to 2      &kp N6  &kp N7  &kp N8     &kp N9      &kp N0         &kp MINUS
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &to 2                                                                 &mo 7      &kp N6  &kp N7  &kp N8     &kp N9      &kp N0         &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &to 0                                                                 &to 3      &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &kp BSLH
 &kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &to 1                  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 4      &kp M   &kp N   &kp E      &kp I       &kp O          &kp SQT
 &kp LSHFT  &kp X      &kp C     &kp D     &kp V      &kp Z                                     &kp HOME      &kp PG_UP                        &kp K   &kp H   &kp COMMA  &kp PERIOD  &kp SLASH      &kp RSHFT
-&mo 5      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &nvim_lux 5 BACKSPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp KP_DOT  &kp RBKT       &mo 5
+&mo 8      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &nvim_lux 5 BACKSPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp KP_DOT  &kp RBKT       &mo 8
             >;
         };
 
         low-key-QWERTY-mac {
             display-name = "mac";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 2                                                                             &to 2      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 2                                                                             &mo 7      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &to 0                                                                              &to 3      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &to 1                  &kp LEFT_CONTROL  &kp LALT      &kp LGUI   &lt 5 RIGHT_ALT  &to 4      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                            &kp HOME      &kp PG_UP                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 5      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &nvim_lux 5 BACKSPACE  &kp DEL           &kp END       &kp PG_DN  &kp ENTER        &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 5
+&mo 8      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &nvim_lux 5 BACKSPACE  &kp DEL           &kp END       &kp PG_DN  &kp ENTER        &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 8
             >;
         };
 
         fn {
             display-name = "fn_normal";
             bindings = <
-&kp F1      &bt BT_SEL 0           &bt BT_SEL 1          &bt BT_SEL 2       &bt BT_SEL 3      &bt BT_SEL 4  &tog 5                                      &mo 0   &kp F7     &kp F8     &kp F9     &kp F10  &kp F11    &kp F12
-&write_vim  &kp GRAVE              &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp TILDE         &kp PERCENT   &none                                       &none   &kp LC(Y)  &trans     &trans     &trans   &trans     &trans
-&kp LC(V)   &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp DOLLAR    &none   &trans  &trans      &trans  &trans  &none   &kp H      &kp J      &kp K      &kp L    &kp COLON  &trans
-&kp LC(C)   &kp BACKSLASH          &kp SLASH             &kp RIGHT_BRACE    &kp LEFT_BRACE    &kp CARET                     &trans      &trans                  &trans     &kp EQUAL  &kp MINUS  &trans   &trans     &trans
-&qa_vim     &trans                 &trans                &trans             &trans                          &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans     &trans   &trans     &trans
+&kp F1      &kp NUMBER_1           &kp NUMBER_2          &kp NUMBER_3       &kp NUMBER_4      &kp N5       &tog 5                                      &mo 7   &kp NUMBER_6  &kp N7     &kp N8     &kp N9  &kp N0     &kp F12
+&write_vim  &kp GRAVE              &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp TILDE         &kp PERCENT  &none                                       &none   &kp LC(Y)     &trans     &trans     &trans  &trans     &trans
+&kp LC(V)   &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp DOLLAR   &none   &trans  &trans      &trans  &trans  &none   &kp H         &kp J      &kp K      &kp L   &kp COLON  &trans
+&kp LC(C)   &kp BACKSLASH          &kp SLASH             &kp RIGHT_BRACE    &kp LEFT_BRACE    &kp CARET                    &trans      &trans                  &trans        &kp EQUAL  &kp MINUS  &trans  &trans     &trans
+&qa_vim     &trans                 &trans                &trans             &trans                         &trans  &trans  &trans      &trans  &trans  &trans                &trans     &trans     &trans  &trans     &trans
             >;
         };
 
@@ -153,13 +153,23 @@
             >;
         };
 
-        layer_7 {
+        bluetooth {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans                                          &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
+&trans  &trans        &trans        &trans        &trans        &trans        &trans                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &bt BT_CLR  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans                        &trans      &trans                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans                      &trans  &trans  &trans      &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        border_keys {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7                                      &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp F13  &kp F14
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans   &trans   &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans   &trans   &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans   &trans   &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans   &trans   &trans   &trans   &trans
             >;
         };
     };
