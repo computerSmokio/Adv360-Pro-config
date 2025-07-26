@@ -90,11 +90,11 @@
         low-key-QWERTY {
             display-name = "normal";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 2                                                                             &mo 7      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &to 0                                                                              &to 3      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &to 1                  &kp LEFT_CONTROL  &kp LALT      &kp LGUI   &lt 5 RIGHT_ALT  &to 4      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                            &kp HOME      &kp PG_UP                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 8      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &nvim_lux 5 BACKSPACE  &kp DEL           &kp END       &kp PG_DN  &kp ENTER        &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 8
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 2                                                                              &mo 7      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &to 0                                                                               &to 3      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &to 1                  &kp LEFT_CONTROL  &kp LALT      &kp LGUI   &kp LEFT_CONTROL  &to 4      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                            &kp HOME      &kp PG_UP                               &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 8      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &nvim_lux 5 BACKSPACE  &kp DEL           &kp END       &kp PG_DN  &kp ENTER         &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 8
             >;
         };
 
@@ -123,11 +123,11 @@
         low-key-QWERTY-mac {
             display-name = "mac";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 2                                                                             &mo 7      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &to 0                                                                              &to 3      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &to 1                  &kp LEFT_CONTROL  &kp LALT      &kp LGUI   &lt 5 RIGHT_ALT  &to 4      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                            &kp HOME      &kp PG_UP                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 8      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &nvim_lux 5 BACKSPACE  &kp DEL           &kp END       &kp PG_DN  &kp ENTER        &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 8
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 2                                                                              &mo 7      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &to 0                                                                               &to 3      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &to 1                  &kp LEFT_CONTROL  &kp LALT      &kp LGUI   &kp LEFT_CONTROL  &to 4      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                            &kp HOME      &kp PG_UP                               &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 8      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &nvim_lux 5 BACKSPACE  &kp DEL           &kp END       &kp PG_DN  &kp ENTER         &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 8
             >;
         };
 
@@ -136,8 +136,8 @@
             bindings = <
 &kp F1      &kp NUMBER_1           &kp NUMBER_2          &kp NUMBER_3       &kp NUMBER_4      &kp N5       &tog 5                                      &mo 7   &kp NUMBER_6  &kp N7     &kp N8     &kp N9  &kp N0     &kp F12
 &write_vim  &kp GRAVE              &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp TILDE         &kp PERCENT  &none                                       &none   &kp LC(Y)     &trans     &trans     &trans  &trans     &trans
-&kp LC(V)   &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp DOLLAR   &none   &trans  &trans      &trans  &trans  &none   &kp H         &kp J      &kp K      &kp L   &kp COLON  &trans
-&kp LC(C)   &kp BACKSLASH          &kp SLASH             &kp RIGHT_BRACE    &kp LEFT_BRACE    &kp CARET                    &trans      &trans                  &trans        &kp EQUAL  &kp MINUS  &trans  &trans     &trans
+&trans      &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp DOLLAR   &none   &trans  &trans      &trans  &trans  &none   &kp H         &kp J      &kp K      &kp L   &kp COLON  &kp LC(LS(V))
+&trans      &kp BACKSLASH          &kp SLASH             &kp RIGHT_BRACE    &kp LEFT_BRACE    &kp CARET                    &trans      &trans                  &trans        &kp EQUAL  &kp MINUS  &trans  &trans     &kp LC(LS(C))
 &qa_vim     &trans                 &trans                &trans             &trans                         &trans  &trans  &trans      &trans  &trans  &trans                &trans     &trans     &trans  &trans     &trans
             >;
         };
@@ -145,11 +145,11 @@
         fn_mac {
             display-name = "fn_mac";
             bindings = <
-&trans     &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans     &trans
-&trans     &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans     &trans
-&kp LG(V)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp H   &kp J   &kp K   &kp L   &kp COLON  &trans
-&kp LG(C)  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans     &trans
-&trans     &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp H   &kp J   &kp K   &kp L   &kp COLON  &kp LG(V)
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans     &kp LG(C)
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans     &trans
             >;
         };
 
