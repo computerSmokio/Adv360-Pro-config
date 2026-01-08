@@ -186,17 +186,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        fn_mac {
-            if-layers = <6 6>;
-            then-layer = <7>;
-        };
-
-        fn_mac_qwerty {
-            if-layers = <6 6>;
-            then-layer = <7>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
